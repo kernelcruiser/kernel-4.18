@@ -2265,7 +2265,7 @@ put_file:
 out:
 	return err;
 }
-
+//BPF系统调用入口
 SYSCALL_DEFINE3(bpf, int, cmd, union bpf_attr __user *, uattr, unsigned int, size)
 {
 	union bpf_attr attr = {};
